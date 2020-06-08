@@ -1,0 +1,14 @@
+section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  article {
+    margin: 0 10px;
+    width: 150px;
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+  }
+}

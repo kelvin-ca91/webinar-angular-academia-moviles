@@ -1,0 +1,5 @@
+<article (click)="selectMovie(movie.id)">
+  <img [src]="movie.poster_path" alt="" />
+  <p class="title">{{ movie.title }}</p>
+  <p class="date">{{ movie.release_date | date: "mediumDate" }}</p>
+</article>

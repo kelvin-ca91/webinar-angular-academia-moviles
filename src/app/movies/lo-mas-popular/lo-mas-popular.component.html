@@ -1,0 +1,15 @@
+<h4>Lo mas popular</h4>
+<section>
+  <ng-container *ngFor="let item of listaMasPopular">
+    <app-movie-card
+      (clickSelectMovie)="removeMovie($event)"
+      [movie]="item"
+    ></app-movie-card>
+  </ng-container>
+
+  <!-- <article *ngFor="let movie of listaMasPopular">
+    <img [src]="movie.poster_path" alt="" />
+    <p class="title">{{ movie.title }}</p>
+    <p class="date">{{ movie.release_date }}</p>
+  </article> -->
+</section>
